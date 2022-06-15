@@ -31,6 +31,9 @@ body {
     flex-direction: column;
 }
 .odin-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     background: rgba(0, 0, 0, .6);
@@ -39,7 +42,10 @@ body {
     text-align: center;
     font-family: norse-bold;
     font-size: 6em;
-    padding-top: 30px;
+    padding: 20px;
+}
+.odin-text{
+    padding-top: 20px;
 }
 .image-citation, .image-citation a {
     margin-top: 97vh;
