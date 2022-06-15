@@ -41,6 +41,12 @@ body {
     font-size: 6em;
     padding-top: 30px;
 }
+.image-citation, .image-citation a {
+    margin-top: 97vh;
+    color: white;
+    text-align: center;
+    opacity: .8;
+}
 .sheet-info, .create-account {
     flex: auto;
 }
