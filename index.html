@@ -18,33 +18,51 @@
     </div>
     <div class = "sheet-right">
         <div class="sheet-info">
-            <h2>This is not a real online service! You know you need something like this in your life
-                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-            </h2>
-            <h2>You <em>know</em> you want to.</h2>
+            <div id="sheet-info-content">
+                <h2>This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </h2>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
         </div>
         <div class="sign-up-sheet">
             <h2>Let's do this!</h2>
             <form>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="firstName" placeholder="Thor">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="lastName" placeholder="Odison">
-                <label for="user-email">EMAIL</label>
-                <input type="email" id="user-email" name="userEmail">
-                <label for="user-phone">PHONE NUMBER</label>
-                <input type = "tel" id="user-phone"
-                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
-                <label for="user-password">PASSWORD</label>
-                <input type="password" id="user-password" name="userPassword">
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password">
+                <div id="form-left-side">
+                    <div class="form-input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="firstName" placeholder="Thor">
+                    </div>
+                    <div class="form-input">
+                        <label for="user-email">EMAIL</label>
+                        <input type="email" id="user-email" name="userEmail">
+                    </div>
+                    <div class="form-input">
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" id="user-password" name="userPassword">
+                    </div>
+                </div>
+                <div id="form-right-side">
+                    <div class="form-input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Odison">
+                    </div>
+                    <div class="form-input">
+                        <label for="user-phone">PHONE NUMBER</label>
+                        <input type = "tel" id="user-phone"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password">
+                    </div>
+                </div>
             </form>
         </div>
         <div class="create-account">
             <button class="submit-form">Create Account</button>
             <div>Already have an account? 
-                 <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-basics">Log in</a></div>
+                 <a id="log-in-link" href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-basics">Log in</a></div>
         </div>
     </div>
 
