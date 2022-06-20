@@ -31,40 +31,39 @@
                 <div id="form-left-side">
                     <div class="form-input">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="firstName" placeholder="Thor">
+                        <input type="text" id="first-name" name="firstName" required>
                     </div>
                     <div class="form-input">
                         <label for="user-email">EMAIL</label>
-                        <input type="email" id="user-email" name="userEmail">
+                        <input type="email" id="user-email" name="userEmail" required>
                     </div>
                     <div class="form-input">
                         <label for="user-password">PASSWORD</label>
-                        <input type="password" id="user-password" name="userPassword">
+                        <input type="password" id="user-password" name="userPassword" required>
                     </div>
                 </div>
                 <div id="form-right-side">
                     <div class="form-input">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="lastName" placeholder="Odison">
+                        <input type="text" id="last-name" name="lastName">
                     </div>
                     <div class="form-input">
                         <label for="user-phone">PHONE NUMBER</label>
-                        <input type = "tel" id="user-phone"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
+                        <input type = "tel" id="user-phone">
                     </div>
                     <div class="form-input">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password">
+                        <input type="password" id="confirm-password" required>
                     </div>
                 </div>
-            </form>
         </div>
-        <div class="create-account">
-            <button class="submit-form">Create Account</button>
-            <div>Already have an account? 
-                 <a id="log-in-link" href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-basics">Log in</a></div>
-        </div>
+            <div class="create-account">
+                <button type="Submit">Create Account</button>
+                <div>Already have an account? 
+                    <a id="log-in-link" href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-basics">Log in</a></div>
+            </div>
     </div>
+        </form>
 
     <script src="java/script.js"></script>
 </body>
