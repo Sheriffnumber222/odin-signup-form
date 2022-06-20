@@ -98,10 +98,12 @@ form{
     gap: 40px;
 }
 input{
+    -webkit-appearance: none;
+    appearance: none;
     width: 20vw;
     height: 30px;
     font-size: 1rem;
-    border: 2px solid lightgrey;;
+    border: 2px solid lightgrey;
     border-radius: 5px;
 }
 #form-left-side, #form-right-side {
@@ -111,6 +113,13 @@ input{
 }
 .form-input {
     position: relative;
+}
+.form-input span {
+    position: absolute;
+    color: red;
+    left: 0;
+    bottom:-15px;
+    font-size: .7rem;
 }
 form label {
     position: absolute;
@@ -122,4 +131,14 @@ form label {
     color: var(--image-tone);
     text-decoration: none;
     font-weight: bold;
+}
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 2px 2px 5px lightgrey;
+}
+input:invalid:not(:focus):not(:placeholder-shown),
+input:invalid:not(:focus):not(:placeholder-shown) + span:after {
+    border-color: red;
+    content: "*Invalid Email";
 }
