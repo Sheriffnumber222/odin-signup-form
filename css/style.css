@@ -120,6 +120,7 @@ input{
     left: 0;
     bottom:-15px;
     font-size: .7rem;
+    opacity: 0.0;
 }
 form label {
     position: absolute;
@@ -137,8 +138,9 @@ input:focus {
     border-color: blue;
     box-shadow: 2px 2px 5px lightgrey;
 }
-input:invalid:not(:focus):not(:placeholder-shown),
-input:invalid:not(:focus):not(:placeholder-shown) + span:after {
+input:invalid:not(:focus):not(:placeholder-shown) {
     border-color: red;
-    content: "*Invalid Email";
+}
+input:invalid:not(:focus):not(:placeholder-shown) + span {
+    opacity: 1.0;
 }
